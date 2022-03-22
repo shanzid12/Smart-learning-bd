@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/smart-learning-bd/static/css/main.aab5e037.chunk.css",
-    "main.js": "/smart-learning-bd/static/js/main.2273f51f.chunk.js",
-    "main.js.map": "/smart-learning-bd/static/js/main.2273f51f.chunk.js.map",
+    "main.js": "/smart-learning-bd/static/js/main.b142ec12.chunk.js",
+    "main.js.map": "/smart-learning-bd/static/js/main.b142ec12.chunk.js.map",
     "runtime-main.js": "/smart-learning-bd/static/js/runtime-main.125455de.js",
     "runtime-main.js.map": "/smart-learning-bd/static/js/runtime-main.125455de.js.map",
-    "static/js/2.b937c6b6.chunk.js": "/smart-learning-bd/static/js/2.b937c6b6.chunk.js",
-    "static/js/2.b937c6b6.chunk.js.map": "/smart-learning-bd/static/js/2.b937c6b6.chunk.js.map",
+    "static/js/2.8a6f257c.chunk.js": "/smart-learning-bd/static/js/2.8a6f257c.chunk.js",
+    "static/js/2.8a6f257c.chunk.js.map": "/smart-learning-bd/static/js/2.8a6f257c.chunk.js.map",
     "static/js/3.16e0aeef.chunk.js": "/smart-learning-bd/static/js/3.16e0aeef.chunk.js",
     "static/js/3.16e0aeef.chunk.js.map": "/smart-learning-bd/static/js/3.16e0aeef.chunk.js.map",
     "index.html": "/smart-learning-bd/index.html",
     "static/css/main.aab5e037.chunk.css.map": "/smart-learning-bd/static/css/main.aab5e037.chunk.css.map",
-    "static/js/2.b937c6b6.chunk.js.LICENSE.txt": "/smart-learning-bd/static/js/2.b937c6b6.chunk.js.LICENSE.txt"
+    "static/js/2.8a6f257c.chunk.js.LICENSE.txt": "/smart-learning-bd/static/js/2.8a6f257c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.125455de.js",
-    "static/js/2.b937c6b6.chunk.js",
+    "static/js/2.8a6f257c.chunk.js",
     "static/css/main.aab5e037.chunk.css",
-    "static/js/main.2273f51f.chunk.js"
+    "static/js/main.b142ec12.chunk.js"
   ]
 }
