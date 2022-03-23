@@ -28,7 +28,7 @@ const InstallAppDialog = ({ isInstallDialogOpen, setIsInstallDialogOpen }) => {
 			fullWidth>
 			<ListItem divider>
 				<ListItemText
-					primary='How to install ElearnBD Progressive Web App'
+					primary='How to install SmartLearningBD Progressive Web App'
 					primaryTypographyProps={{ variant: 'h6' }}
 					style={{ padding: '0px 8px' }}
 					id='install-app-dialog'

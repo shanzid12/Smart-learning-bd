@@ -8,7 +8,7 @@ export default function AboutUs() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`About Us - ELearnBD`}</title>
+				<title>{`About Us - SmartLearningBD`}</title>
 			</Helmet>
 			<Box bgcolor='background.paper' textAlign='center'>
 				<img alt='Logo' src={`${process.env.PUBLIC_URL}/assets/icons/icon-128.png`} />

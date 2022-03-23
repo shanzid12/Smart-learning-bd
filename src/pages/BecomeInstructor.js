@@ -6,7 +6,7 @@ export default function BecomeInstructor() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Become an Instructor - ELearnBD`}</title>
+				<title>{`Become an Instructor - SmartLearningBD`}</title>
 			</Helmet>
 			<Typography variant='h2' color='textPrimary' display='block' gutterBottom>
 				Become an Instructor

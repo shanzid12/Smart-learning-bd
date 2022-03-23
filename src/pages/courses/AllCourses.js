@@ -48,7 +48,7 @@ export default function AllCourses() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Courses - ELearnBD`}</title>
+				<title>{`Courses - SmartLearningBD`}</title>
 			</Helmet>
 			<Container maxWidth='xl'>
 				<div

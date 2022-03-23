@@ -6,7 +6,7 @@ export default function ReportProblem() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Report a Problem - ELearnBD`}</title>
+				<title>{`Report a Problem - SmartLearningBD`}</title>
 			</Helmet>
 			<Typography variant='h2' color='textPrimary' display='block' gutterBottom>
 				Report a Problem

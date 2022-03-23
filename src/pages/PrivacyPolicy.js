@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Privacy and Policy - ELearnBD`}</title>
+				<title>{`Privacy and Policy - SmartLearningBD`}</title>
 			</Helmet>
 			<Typography variant='h2' color='textPrimary' display='block' gutterBottom>
 				Privacy and Policy

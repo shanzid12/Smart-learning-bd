@@ -421,7 +421,7 @@ export default function Home() {
 	return (
 		<>
 			<Helmet>
-				<title>ELearnBD</title>
+				<title>SmartLearningBD</title>
 			</Helmet>
 			<Container maxWidth='xl'>
 				<Typography
@@ -431,7 +431,7 @@ export default function Home() {
 					display='block'
 					className={classes.divider}
 					gutterBottom>
-					{user.fullName ? `Welcome ${user.fullName}` : 'Welcome to ELearnBD'}
+					{user.fullName ? `Welcome ${user.fullName}` : 'Welcome to SmartLearningBD'}
 				</Typography>
 
 				<Button

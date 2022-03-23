@@ -9,7 +9,7 @@ exports.apiQuestionBank = `${backend}/api/v1/questions`;
 exports.apiTutorials = `${backend}/api/v1/tutorials`;
 exports.apiUsers = `${backend}/api/v1/users`;
 
-const root = '/elearnbd/';
+const root = '/Smart-learning-bd/';
 
 exports.root = root;
 exports.about = `${root}about`;
@@ -48,7 +48,7 @@ exports.tutorials = `${root}tutorials`;
 
 exports.phoneNumber = '+8801983180596';
 exports.email = 'shayakanis@gmail.com';
-exports.emailSubject = 'ELearnBD%20Support%20and%20Feedback';
+exports.emailSubject = 'SmartLearningBD%20Support%20and%20Feedback';
 exports.facebookPage = 'https://www.facebook.com/azshayak';
 exports.instagramPage = 'https://www.instagram.com/az_shayak/';
 exports.twitterPage = 'https://twitter.com/AzShayak';

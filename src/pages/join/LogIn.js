@@ -98,7 +98,7 @@ export default function LogIn() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Log in - ELearnBD`}</title>
+				<title>{`Log in - SmartLearningBD`}</title>
 			</Helmet>
 			<form>
 				<TextField

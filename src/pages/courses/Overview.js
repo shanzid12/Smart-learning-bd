@@ -82,7 +82,7 @@ export default function Overview() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`${course.title} - ELearnBD`}</title>
+				<title>{`${course.title} - SmartLearningBD`}</title>
 			</Helmet>
 			<Container maxWidth='lg'>
 				<Grid container spacing={2}>

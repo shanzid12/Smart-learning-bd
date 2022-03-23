@@ -230,7 +230,7 @@ const Footer = ({ changeLanguage, setIsThemeChangerOpen, setIsInstallDialogOpen 
 				</div>
 			</div>
 			<Typography variant='caption' display='block' align='center'>
-				&copy; 2021 ElearnBD.com
+				&copy; 2021 SmartLearningBD
 			</Typography>
 		</div>
 	);

@@ -86,7 +86,7 @@ export default function Moderator() {
 			<Helmet>
 				<title>{`${
 					user.role && user.role.charAt(0).toUpperCase() + user.role.slice(1)
-				} Panel - ELearnBD`}</title>
+				} Panel - SmartLearningBD`}</title>
 			</Helmet>
 			<Tabs
 				value={activeTab}

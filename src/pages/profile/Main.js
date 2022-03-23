@@ -36,7 +36,7 @@ export default function Profile() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`${userName} - ELearnBD`}</title>
+				<title>{`${userName} - SmartLearningBD`}</title>
 			</Helmet>
 			{/* <List className={classes.Profile}>
 				<ListItem>

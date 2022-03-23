@@ -89,7 +89,7 @@ export default function QuestionBank() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Question Bank - ELearnBD`}</title>
+				<title>{`Question Bank - SmartLearningBD`}</title>
 			</Helmet>
 			<div className={classes.container}>
 				<QueryFilter

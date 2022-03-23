@@ -226,7 +226,7 @@ export default function CreateBlog() {
 	return (
 		<>
 			<Helmet>
-				<title>{'Create post - ELearnBD'}</title>
+				<title>{'Create post - SmartLearningBD'}</title>
 			</Helmet>
 
 			<Container maxWidth='lg'>

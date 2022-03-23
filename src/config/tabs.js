@@ -4,21 +4,10 @@ import CoursesIcon from '@material-ui/icons/LibraryBooks';
 import QuestionBankIcon from '@material-ui/icons/LiveHelp';
 import PdfBooksIcon from '@material-ui/icons/MenuBook';
 import BlogsIcon from '@material-ui/icons/ChromeReaderMode';
-import TutorialsIcon from '@material-ui/icons/YouTube';
 import ShortQuizIcon from '@material-ui/icons/AssignmentTurnedIn';
-import JobCircularIcon from '@material-ui/icons/Work';
 
 // Links
-import {
-	blogs,
-	courses,
-	home,
-	jobCircular,
-	pdfBooks,
-	questionBank,
-	shortQuiz,
-	tutorials,
-} from '../utils/fixedRoutes';
+import { blogs, courses, home, pdfBooks, questionBank, shortQuiz } from '../utils/fixedRoutes';
 
 const tabs = [
 	{
@@ -56,18 +45,6 @@ const tabs = [
 		value: 'questionbank',
 		label: 'Question Bank',
 		icon: QuestionBankIcon,
-	},
-	{
-		to: tutorials,
-		value: 'tutorials',
-		label: 'Seminar',
-		icon: TutorialsIcon,
-	},
-	{
-		to: jobCircular,
-		value: 'jobcircular',
-		label: 'Job Circular',
-		icon: JobCircularIcon,
 	},
 ];
 

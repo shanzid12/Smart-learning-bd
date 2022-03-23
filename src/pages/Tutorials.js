@@ -88,7 +88,7 @@ export default function Tutorials() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Tutorials - ELearnBD`}</title>
+				<title>{`Tutorials - SmartLearningBD`}</title>
 			</Helmet>
 			<div className={classes.container}>
 				<QueryFilter

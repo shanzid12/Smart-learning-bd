@@ -274,7 +274,7 @@ export default function EditBlog() {
 	return (
 		<>
 			<Helmet>
-				<title>{'Edit post - ELearnBD'}</title>
+				<title>{'Edit post - SmartLearningBD'}</title>
 			</Helmet>
 
 			<Container maxWidth='lg'>

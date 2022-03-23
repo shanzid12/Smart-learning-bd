@@ -174,7 +174,7 @@ export default function ViewBlog() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`${blog.title} - ELearnBD`}</title>
+				<title>{`${blog.title} - SmartLearningBD`}</title>
 			</Helmet>
 			<Container maxWidth='xl'>
 				<Grid container spacing={2}>

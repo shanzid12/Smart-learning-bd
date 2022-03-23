@@ -76,19 +76,8 @@ const Header = ({
 							to={home}
 							size='large'
 							color='primary'
-							startIcon={
-								<SvgIcon>
-									<path
-										fillRule='evenodd'
-										clipRule='evenodd'
-										d='M16 1H8a3 3 0 00-3 3v3.84l1.4-.77V4h11.2v3.05l1.4.77V4a3 3 0 00-3-3zm-5.52 1.4h3V3h-3v-.6zm-1.7.8a.5.5 0 100-1 .5.5 0 000 1zM5 20v-9.64l1.4.76V18h11.2v-2.72H19V20a3 3 0 01-3 3H8a3 3 0 01-3-3zm9 1v-1h-4v1h4z'
-									/>
-									<path d='M7.54 14.3v-2.55L12 14.18l4.46-2.43v2.55L12 16.73 7.54 14.3z' />
-									<path d='M5 9.09l7-3.82 7 3.82v5.1h-1.27v-4.4L12 12.9 5 9.09z' />
-								</SvgIcon>
-							}
 							className={classes.headerTitle}>
-							ELearnBD
+							SmartLearningBD
 						</Button>
 
 						<div className={classes.headerIconsContainer}>
@@ -173,7 +162,7 @@ const useStyles = makeStyles((theme) => ({
 	headerTitle: {
 		textTransform: 'none',
 		...theme.typography.h6,
-		'@media (max-width: 360px)': {
+		'@media (max-width: 240px)': {
 			display: 'none',
 		},
 	},

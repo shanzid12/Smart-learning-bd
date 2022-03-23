@@ -452,7 +452,7 @@ export default function ShortQuiz() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Short Quiz - ELearnBD`}</title>
+				<title>{`Short Quiz - SmartLearningBD`}</title>
 			</Helmet>
 
 			<Container maxWidth='xl'>

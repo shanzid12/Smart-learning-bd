@@ -64,7 +64,7 @@ export default function Lessons() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`${course.title} - ELearnBD`}</title>
+				<title>{`${course.title} - SmartLearningBD`}</title>
 			</Helmet>
 			<Container maxWidth='xl'>
 				<div className={classes.root}>

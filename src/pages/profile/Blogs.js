@@ -49,10 +49,6 @@ export default function AllBlogs() {
 
 	return (
 		<Container maxWidth='xl'>
-			<Helmet>
-				<title>{'Blogs - ELearnBD'}</title>
-			</Helmet>
-
 			<div
 				style={{
 					padding: '8px 0px',

@@ -59,7 +59,7 @@ export default function HandNotes() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Hand Notes - ELearnBD`}</title>
+				<title>{`Hand Notes - SmartLearningBD`}</title>
 			</Helmet>
 			<div
 				style={{

@@ -55,7 +55,7 @@ export default function AllBlogs() {
 	return (
 		<Container maxWidth='xl'>
 			<Helmet>
-				<title>{'Blogs - ELearnBD'}</title>
+				<title>{'Blogs - SmartLearningBD'}</title>
 			</Helmet>
 
 			<div

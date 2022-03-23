@@ -108,7 +108,7 @@ export default function JobCircular() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Job Circular - ELearnBD`}</title>
+				<title>{`Job Circular - SmartLearningBD`}</title>
 			</Helmet>
 			<div className={classes.container}>
 				<Grid container alignItems='flex-start' spacing={1}>

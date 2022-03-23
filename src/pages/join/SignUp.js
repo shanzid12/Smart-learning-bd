@@ -144,7 +144,7 @@ export default function SignUp() {
 	return (
 		<React.Fragment>
 			<Helmet>
-				<title>{`Sign up - ELearnBD`}</title>
+				<title>{`Sign up - SmartLearningBD`}</title>
 			</Helmet>
 			<form>
 				<TextField

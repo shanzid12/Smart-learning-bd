@@ -7,6 +7,7 @@ import Paper from '@material-ui/core/Paper';
 import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import { Helmet } from 'react-helmet';
 
 import axiosInstance from '../utils/axiosInstance';
 import AlertContext from '../config/AlertContext';
@@ -102,6 +103,10 @@ export default function QuestionBank() {
 
 	return (
 		<React.Fragment>
+			<Helmet>
+				<title>{`PDF Books - SmartLearningBD`}</title>
+			</Helmet>
+
 			<Container maxWidth='xl'>
 				<div className={classes.arrayContainer}>{BooksArray}</div>
 			</Container>
@@ -293,9 +298,7 @@ export default function PdfBooks() {
 	});
 	return (
 		<React.Fragment>
-			<Helmet>
-				<title>{`PDF Books - ELearnBD`}</title>
-			</Helmet>
+			
 			<div
 				style={{
 					display: 'flex',

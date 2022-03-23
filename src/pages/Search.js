@@ -333,7 +333,7 @@ export default function Search() {
 	return (
 		<>
 			<Helmet>
-				<title>{`Searching ELearnBD...`}</title>
+				<title>{`Searching SmartLearningBD...`}</title>
 			</Helmet>
 			<Container maxWidth='xl'>
 				<Typography
