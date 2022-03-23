@@ -218,10 +218,6 @@ export default function App() {
 		setNotifications(seenNotifications);
 	};
 
-	const changeLanguage = () => {
-		alert('Language changing will be added');
-	};
-
 	process.on('unhandledRejection', (err) => {
 		console.error(err);
 		setAlertSeverity('error');
@@ -319,7 +315,6 @@ export default function App() {
 							</div>
 
 							<Footer
-								changeLanguage={changeLanguage}
 								setIsThemeChangerOpen={setIsThemeChangerOpen}
 								setIsInstallDialogOpen={setIsInstallDialogOpen}
 							/>
@@ -364,7 +359,7 @@ export default function App() {
 						isOptionsMenuOpen={isOptionsMenuOpen}
 						setIsOptionsMenuOpen={setIsOptionsMenuOpen}
 						setIsThemeChangerOpen={setIsThemeChangerOpen}
-						changeLanguage={changeLanguage}
+						setIsInstallDialogOpen={setIsInstallDialogOpen}
 					/>
 
 					<Snackbar

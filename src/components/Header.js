@@ -6,7 +6,6 @@ import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import Slide from '@material-ui/core/Slide';
-import SvgIcon from '@material-ui/core/SvgIcon';
 import Toolbar from '@material-ui/core/Toolbar';
 import Tooltip from '@material-ui/core/Tooltip';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
@@ -97,16 +96,6 @@ const Header = ({
 								</Tooltip>
 							)}
 
-							{/* <Tooltip title='Notifications'>
-								<IconButton
-									onClick={() => setIsNotificationsDialogOpen(true)}
-									aria-label='Show Notifications'>
-									<Badge color='secondary' badgeContent={notificationCount}>
-										<NotificationsIcon />
-									</Badge>
-								</IconButton>
-							</Tooltip> */}
-
 							{isLoggedIn ? (
 								<Tooltip title={`Profile of ${user.fullName}`}>
 									<IconButton
@@ -162,7 +151,7 @@ const useStyles = makeStyles((theme) => ({
 	headerTitle: {
 		textTransform: 'none',
 		...theme.typography.h6,
-		'@media (max-width: 240px)': {
+		'@media (max-width: 360px)': {
 			display: 'none',
 		},
 	},

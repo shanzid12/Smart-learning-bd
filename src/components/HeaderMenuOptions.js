@@ -2,26 +2,31 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import SupervisorAccount from '@material-ui/icons/SupervisorAccount';
+import GetApp from '@material-ui/icons/GetApp';
 import PaletteIcon from '@material-ui/icons/Palette';
 import PolicyIcon from '@material-ui/icons/Policy';
-import BugReportIcon from '@material-ui/icons/BugReport';
 import InfoIcon from '@material-ui/icons/Info';
 import { Link } from 'react-router-dom';
 
-import { about, privacyPolicy, reportBug } from '../utils/fixedRoutes';
+import { about, becomeInstructor, privacyPolicy } from '../utils/fixedRoutes';
 
 const OptionsMenu = ({
 	anchorPosition,
 	isOptionsMenuOpen,
 	setIsOptionsMenuOpen,
 	setIsThemeChangerOpen,
-	changeLanguage,
+	setIsInstallDialogOpen,
 }) => {
 	const handleMenuClose = () => {
 		setIsOptionsMenuOpen(false);
 	};
 	const handleThemeChangerOpen = () => {
 		setIsThemeChangerOpen(true);
+		setIsOptionsMenuOpen(false);
+	};
+	const handleInstallChangerOpen = () => {
+		setIsInstallDialogOpen(true);
 		setIsOptionsMenuOpen(false);
 	};
 
@@ -36,12 +41,20 @@ const OptionsMenu = ({
 				<ListItemText secondary='Options' />
 			</MenuItem>
 
-			<MenuItem dense divider button onClick={handleThemeChangerOpen}>
+			<MenuItem dense button onClick={handleThemeChangerOpen}>
 				<ListItemIcon>
 					<PaletteIcon />
 				</ListItemIcon>
 
 				<ListItemText primary='Change Theme' />
+			</MenuItem>
+
+			<MenuItem divider dense button onClick={handleInstallChangerOpen}>
+				<ListItemIcon>
+					<GetApp />
+				</ListItemIcon>
+
+				<ListItemText primary='Install App' />
 			</MenuItem>
 
 			<MenuItem disabled dense>
@@ -56,12 +69,12 @@ const OptionsMenu = ({
 				<ListItemText primary='Privacy &amp; Policy' />
 			</MenuItem>
 
-			<MenuItem dense component={Link} to={reportBug} onClick={handleMenuClose}>
+			<MenuItem dense component={Link} to={becomeInstructor} onClick={handleMenuClose}>
 				<ListItemIcon>
-					<BugReportIcon />
+					<SupervisorAccount />
 				</ListItemIcon>
 
-				<ListItemText primary='Report A Problem' />
+				<ListItemText primary='Become An Instructor' />
 			</MenuItem>
 
 			<MenuItem dense component={Link} to={about} onClick={handleMenuClose}>
@@ -69,7 +82,7 @@ const OptionsMenu = ({
 					<InfoIcon />
 				</ListItemIcon>
 
-				<ListItemText primary='About Us' />
+				<ListItemText primary='About Me' />
 			</MenuItem>
 		</Menu>
 	);

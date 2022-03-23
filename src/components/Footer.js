@@ -5,14 +5,11 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 //Material UI icons
-import BugReport from '@material-ui/icons/BugReport';
-import Call from '@material-ui/icons/Call';
 import Email from '@material-ui/icons/Email';
 import Facebook from '@material-ui/icons/Facebook';
 import GetApp from '@material-ui/icons/GetApp';
 import Info from '@material-ui/icons/Info';
 import Instagram from '@material-ui/icons/Instagram';
-import Language from '@material-ui/icons/Language';
 import Palette from '@material-ui/icons/Palette';
 import Policy from '@material-ui/icons/Policy';
 import SupervisorAccount from '@material-ui/icons/SupervisorAccount';
@@ -32,8 +29,6 @@ import {
 	about,
 	becomeInstructor,
 	privacyPolicy,
-	reportBug,
-	phoneNumber,
 	email,
 	emailSubject,
 	facebookPage,
@@ -43,7 +38,7 @@ import {
 	youTubeChannel,
 } from '../utils/fixedRoutes';
 
-const Footer = ({ changeLanguage, setIsThemeChangerOpen, setIsInstallDialogOpen }) => {
+const Footer = ({ setIsThemeChangerOpen, setIsInstallDialogOpen }) => {
 	const { user, setUser } = useContext(UserContext);
 	const { setAlertMessage, setAlertSeverity } = useContext(AlertContext);
 	const [hasFetched, setHasFetched] = useState(false);
@@ -93,14 +88,6 @@ const Footer = ({ changeLanguage, setIsThemeChangerOpen, setIsInstallDialogOpen 
 						Options
 					</Typography>
 					<Button
-						onClick={() => changeLanguage()}
-						startIcon={<Language />}
-						variant='text'
-						className={classes.footerLinkButton}>
-						English / বাংলা
-					</Button>
-					<br />
-					<Button
 						onClick={() => setIsThemeChangerOpen(true)}
 						startIcon={<Palette />}
 						variant='text'
@@ -137,15 +124,6 @@ const Footer = ({ changeLanguage, setIsThemeChangerOpen, setIsInstallDialogOpen 
 						className={classes.footerLinkButton}>
 						Privacy &amp; Policy
 					</Button>
-					<br />
-					<Button
-						component={Link}
-						to={reportBug}
-						startIcon={<BugReport />}
-						variant='text'
-						className={classes.footerLinkButton}>
-						Report A Problem
-					</Button>
 				</div>
 				<div className={classes.footerSection}>
 					<Typography variant='subtitle1' color='secondary'>
@@ -157,16 +135,7 @@ const Footer = ({ changeLanguage, setIsThemeChangerOpen, setIsInstallDialogOpen 
 						startIcon={<Info />}
 						variant='text'
 						className={classes.footerLinkButton}>
-						About Us
-					</Button>
-					<br />
-					<Button
-						component='a'
-						href={`tel:${phoneNumber}`}
-						startIcon={<Call />}
-						variant='text'
-						className={classes.footerLinkButton}>
-						{phoneNumber}
+						About Me
 					</Button>
 					<br />
 					<Button
