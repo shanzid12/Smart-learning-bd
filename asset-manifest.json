@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/smart-learning-bd/static/css/main.aab5e037.chunk.css",
-    "main.js": "/smart-learning-bd/static/js/main.48ff5fc7.chunk.js",
-    "main.js.map": "/smart-learning-bd/static/js/main.48ff5fc7.chunk.js.map",
-    "runtime-main.js": "/smart-learning-bd/static/js/runtime-main.125455de.js",
-    "runtime-main.js.map": "/smart-learning-bd/static/js/runtime-main.125455de.js.map",
-    "static/js/2.8a6f257c.chunk.js": "/smart-learning-bd/static/js/2.8a6f257c.chunk.js",
-    "static/js/2.8a6f257c.chunk.js.map": "/smart-learning-bd/static/js/2.8a6f257c.chunk.js.map",
-    "static/js/3.16e0aeef.chunk.js": "/smart-learning-bd/static/js/3.16e0aeef.chunk.js",
-    "static/js/3.16e0aeef.chunk.js.map": "/smart-learning-bd/static/js/3.16e0aeef.chunk.js.map",
-    "index.html": "/smart-learning-bd/index.html",
-    "static/css/main.aab5e037.chunk.css.map": "/smart-learning-bd/static/css/main.aab5e037.chunk.css.map",
-    "static/js/2.8a6f257c.chunk.js.LICENSE.txt": "/smart-learning-bd/static/js/2.8a6f257c.chunk.js.LICENSE.txt"
+    "main.css": "/Smart-learning-bd/static/css/main.aab5e037.chunk.css",
+    "main.js": "/Smart-learning-bd/static/js/main.cbd7a2ee.chunk.js",
+    "main.js.map": "/Smart-learning-bd/static/js/main.cbd7a2ee.chunk.js.map",
+    "runtime-main.js": "/Smart-learning-bd/static/js/runtime-main.e1fee5ee.js",
+    "runtime-main.js.map": "/Smart-learning-bd/static/js/runtime-main.e1fee5ee.js.map",
+    "static/js/2.42590e3e.chunk.js": "/Smart-learning-bd/static/js/2.42590e3e.chunk.js",
+    "static/js/2.42590e3e.chunk.js.map": "/Smart-learning-bd/static/js/2.42590e3e.chunk.js.map",
+    "static/js/3.6a9586de.chunk.js": "/Smart-learning-bd/static/js/3.6a9586de.chunk.js",
+    "static/js/3.6a9586de.chunk.js.map": "/Smart-learning-bd/static/js/3.6a9586de.chunk.js.map",
+    "index.html": "/Smart-learning-bd/index.html",
+    "static/css/main.aab5e037.chunk.css.map": "/Smart-learning-bd/static/css/main.aab5e037.chunk.css.map",
+    "static/js/2.42590e3e.chunk.js.LICENSE.txt": "/Smart-learning-bd/static/js/2.42590e3e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.125455de.js",
-    "static/js/2.8a6f257c.chunk.js",
+    "static/js/runtime-main.e1fee5ee.js",
+    "static/js/2.42590e3e.chunk.js",
     "static/css/main.aab5e037.chunk.css",
-    "static/js/main.48ff5fc7.chunk.js"
+    "static/js/main.cbd7a2ee.chunk.js"
   ]
 }
