@@ -38,10 +38,10 @@ const UserMenu = ({ anchorPosition, isUserMenuOpen, setIsUserMenuOpen }) => {
 			component={Link}
 			to={`${profile}/${user.userName}`}
 			onClick={handleMenuClose}
-			key='key-header-menu-profile-list-item'
-			id='id-header-menu-profile-list-item'>
+			key="key-header-menu-profile-list-item"
+			id="id-header-menu-profile-list-item">
 			<ListItemAvatar>
-				<Avatar alt='User Profile Picture' src={user.photo} />
+				<Avatar alt="User Profile Picture" src={user.photo} />
 			</ListItemAvatar>
 
 			<ListItemText primary={user.fullName} secondary={user.email} />
@@ -51,14 +51,14 @@ const UserMenu = ({ anchorPosition, isUserMenuOpen, setIsUserMenuOpen }) => {
 			onClick={handleLogOut}
 			button
 			divider
-			key='key-header-menu-profile-log-out-button'
-			id='id-header-menu-profile-log-out-button'>
+			key="key-header-menu-profile-log-out-button"
+			id="id-header-menu-profile-log-out-button">
 			<ListItemIcon>
-				<LogoutIcon color='secondary' />
+				<LogoutIcon color="secondary" />
 			</ListItemIcon>
 
 			<ListItemText
-				secondary='Log Out'
+				secondary="Log Out"
 				secondaryTypographyProps={{
 					variant: 'button',
 					color: 'secondary',
@@ -72,8 +72,8 @@ const UserMenu = ({ anchorPosition, isUserMenuOpen, setIsUserMenuOpen }) => {
 				component={Link}
 				to={moderator}
 				onClick={handleMenuClose}
-				key='key-header-menu-admin-panel'
-				id='id-header-menu-admin-panel'>
+				key="key-header-menu-admin-panel"
+				id="id-header-menu-admin-panel">
 				<ListItemIcon>
 					<SupervisorAccountIcon />
 				</ListItemIcon>
@@ -98,18 +98,18 @@ const UserMenu = ({ anchorPosition, isUserMenuOpen, setIsUserMenuOpen }) => {
 			<ListItemText primary='My Hand Notes' />
 		</MenuItem>, */
 
-		<MenuItem
+		/* <MenuItem
 			component={Link}
 			to={`${profile}/${user.userName}/blogs`}
 			onClick={handleMenuClose}
 			dense
-			key='key-header-menu-profile-extra-blogs'
-			id='id-header-menu-profile-extra-blogs'>
+			key="key-header-menu-profile-extra-blogs"
+			id="id-header-menu-profile-extra-blogs">
 			<ListItemIcon>
 				<BlogsIcon />
 			</ListItemIcon>
 
-			<ListItemText primary='My Blogs' />
+			<ListItemText primary="My Blogs" />
 		</MenuItem>,
 
 		<MenuItem
@@ -124,9 +124,9 @@ const UserMenu = ({ anchorPosition, isUserMenuOpen, setIsUserMenuOpen }) => {
 			</ListItemIcon>
 
 			<ListItemText primary='My Courses' />
-		</MenuItem>,
+		</MenuItem>, 
 
-		/* <MenuItem
+		 <MenuItem
 			component={Link}
 			to={`${profile}/${user.userName}/favorites`}
 			onClick={handleMenuClose}
@@ -145,13 +145,13 @@ const UserMenu = ({ anchorPosition, isUserMenuOpen, setIsUserMenuOpen }) => {
 			to={`${profile}/${user.userName}/editprofile`}
 			onClick={handleMenuClose}
 			dense
-			key='key-header-menu-profile-extra-edit-profile'
-			id='id-header-menu-profile-extra-edit-profile'>
+			key="key-header-menu-profile-extra-edit-profile"
+			id="id-header-menu-profile-extra-edit-profile">
 			<ListItemIcon>
 				<EditIcon />
 			</ListItemIcon>
 
-			<ListItemText primary='Edit Profile' />
+			<ListItemText primary="Edit Profile" />
 		</MenuItem>,
 	];
 
@@ -159,9 +159,9 @@ const UserMenu = ({ anchorPosition, isUserMenuOpen, setIsUserMenuOpen }) => {
 		<MenuItem
 			disabled
 			dense
-			key='key-header-menu-no-user-sign-up-text'
-			id='id-header-menu-no-user-sign-up-text'>
-			<ListItemText secondary='Join the community' />
+			key="key-header-menu-no-user-sign-up-text"
+			id="id-header-menu-no-user-sign-up-text">
+			<ListItemText secondary="Join the community" />
 		</MenuItem>,
 
 		<MenuItem
@@ -169,11 +169,11 @@ const UserMenu = ({ anchorPosition, isUserMenuOpen, setIsUserMenuOpen }) => {
 			to={signUp}
 			onClick={handleMenuClose}
 			divider
-			key='key-header-menu-no-user-sign-up-button'
-			id='id-header-menu-no-user-sign-up-button'>
+			key="key-header-menu-no-user-sign-up-button"
+			id="id-header-menu-no-user-sign-up-button">
 			<ListItemText
 				disableTypography
-				primary='Sign up'
+				primary="Sign up"
 				className={classes.headerMenuSignupButtonText}
 			/>
 		</MenuItem>,
@@ -181,20 +181,20 @@ const UserMenu = ({ anchorPosition, isUserMenuOpen, setIsUserMenuOpen }) => {
 		<MenuItem
 			disabled
 			dense
-			key='key-header-menu-no-user-log-in-text'
-			id='id-header-menu-no-user-log-in-text'>
-			<ListItemText secondary='Already have an account?' />
+			key="key-header-menu-no-user-log-in-text"
+			id="id-header-menu-no-user-log-in-text">
+			<ListItemText secondary="Already have an account?" />
 		</MenuItem>,
 
 		<MenuItem
 			component={Link}
 			to={logIn}
 			onClick={handleMenuClose}
-			key='key-header-menu-no-user-log-in-button'
-			id='id-header-menu-no-user-log-in-button'>
+			key="key-header-menu-no-user-log-in-button"
+			id="id-header-menu-no-user-log-in-button">
 			<ListItemText
 				disableTypography
-				primary='Log in'
+				primary="Log in"
 				className={classes.headerMenuLoginButtonText}
 			/>
 		</MenuItem>,
@@ -204,9 +204,9 @@ const UserMenu = ({ anchorPosition, isUserMenuOpen, setIsUserMenuOpen }) => {
 		<Menu
 			open={isUserMenuOpen}
 			onClose={handleMenuClose}
-			anchorReference='anchorPosition'
+			anchorReference="anchorPosition"
 			anchorPosition={anchorPosition}
-			id='header-user-menu'>
+			id="header-user-menu">
 			{isLoggedIn ? UserMenu : NoUserMenu}
 		</Menu>
 	);

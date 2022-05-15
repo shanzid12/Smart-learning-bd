@@ -59,35 +59,35 @@ export default function QuestionBank() {
 		if (books && books.length > 0) {
 			return books.map((item) => {
 				return (
-					<Card key={item._id} variant='outlined' className={classes.cardContainer}>
+					<Card key={item._id} variant="outlined" className={classes.cardContainer}>
 						<CardActionArea onClick={() => handleLinkOpen(item.title, item.driveId)}>
 							<CardMedia
 								image={`${backend}${item.photo}`}
-								title='Cover Image'
+								title="Cover Image"
 								className={classes.cardImage}
 							/>
 
 							<div className={classes.cardContent}>
 								<Typography
-									variant='body1'
-									color='textPrimary'
-									display='block'
+									variant="body1"
+									color="textPrimary"
+									display="block"
 									className={classes.lineClamp2}>
 									{item.title}
 								</Typography>
 
 								<Typography
-									variant='subtitle2'
-									color='textSecondary'
-									display='block'
+									variant="subtitle2"
+									color="textSecondary"
+									display="block"
 									className={classes.lineClamp1}>
 									{item.authorName}
 								</Typography>
 
 								<Typography
-									variant='body2'
-									color='textSecondary'
-									display='block'
+									variant="body2"
+									color="textSecondary"
+									display="block"
 									className={classes.lineClamp1}>
 									{item.subject}
 								</Typography>
@@ -107,7 +107,24 @@ export default function QuestionBank() {
 				<title>{`PDF Books - SmartLearningBD`}</title>
 			</Helmet>
 
-			<Container maxWidth='xl'>
+			<Container maxWidth="xl">
+				<div className={classes.searchBarContainer}>
+					<TextField
+						onChange={(event) => {
+							if (!event.target.value) setSearch('');
+						}}
+						onKeyPress={(event) => {
+							if (event.key === ' ' || event.key === 'Enter')
+								setSearch(event.target.value.trim());
+						}}
+						label="Search by title"
+						variant="outlined"
+						margin="dense"
+						fullWidth
+						className={classes.searchBar}
+					/>
+				</div>
+
 				<div className={classes.arrayContainer}>{BooksArray}</div>
 			</Container>
 
@@ -202,7 +219,6 @@ const useStyles = makeStyles((theme) => ({
 		alignItems: 'center',
 		justifyContent: 'center',
 	},
-
 	marginBottom: {
 		margin: theme.spacing(0, 0, 2, 0),
 	},

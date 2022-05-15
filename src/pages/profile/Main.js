@@ -46,24 +46,24 @@ export default function Profile() {
 					<ListItemText primary={user.fullName} secondary={user.userName} />
 				</ListItem>
 			</List> */}
-			<Tabs
+			{/* <Tabs
 				value={activeTab}
 				indicatorColor='primary'
 				variant='scrollable'
 				scrollButtons='auto'
 				aria-label='Profile tabs'>
-				{/* <Tab
+				<Tab
 					component={Link}
 					to={`${profile}/${userName}/about`}
 					value='about'
 					label='About'
-				/> */}
-				{/* <Tab
+				/> 
+				<Tab
 					component={Link}
 					to={`${profile}/${userName}/handnotes`}
 					value='handnotes'
 					label='Hand Notes'
-				/> */}
+				/> 
 				<Tab
 					component={Link}
 					to={`${profile}/${userName}/blogs`}
@@ -76,12 +76,12 @@ export default function Profile() {
 					value='courses'
 					label='Courses'
 				/>
-				{/* <Tab
+				<Tab
 					component={Link}
 					to={`${profile}/${userName}/favorites`}
 					value='favorites'
 					label='Favorites'
-				/> */}
+				/> 
 				{userName === user.userName ? (
 					<Tab
 						component={Link}
@@ -91,7 +91,7 @@ export default function Profile() {
 					/>
 				) : undefined}
 			</Tabs>
-			<Divider />
+			<Divider />*/}
 
 			<Switch>
 				<Route path={`${profile}/${userName}/about`} component={ProfileAbout} />
@@ -102,7 +102,10 @@ export default function Profile() {
 				{userName === user.userName ? (
 					<Route path={`${profile}/${userName}/editprofile`} component={ProfileEdit} />
 				) : undefined}
-				<Redirect from={`${profile}/${userName}`} to={`${profile}/${userName}/blogs`} />
+				<Redirect
+					from={`${profile}/${userName}`}
+					to={`${profile}/${userName}/editprofile`}
+				/>
 			</Switch>
 		</React.Fragment>
 	);
